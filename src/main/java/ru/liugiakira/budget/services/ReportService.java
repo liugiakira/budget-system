@@ -22,7 +22,7 @@ public class ReportService {
     public ReportService(TransactionDao transactionDao) { this.transactionDao = transactionDao; }
 
     /**
-     * Отчета о расходах и доходах по категориям за заданный период
+     * Отчет о расходах и доходах по категориям за заданный период
      *  с опциональным фильтром по аккаунтам
      * @param from Дата с (обязательно)
      * @param to Дата по (обязательно)

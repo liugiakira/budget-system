@@ -6,14 +6,20 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * Отчета о расходах и доходах по категориям за заданный период
+ * Отчет о расходах и доходах по категориям за заданный период
  * с опциональным фильтром по аккаунтам
  * @author k.yakovleva
  */
 public class Report {
 
+    /**
+     * Доходы по категориям
+     */
     @JsonProperty("inc")
     private Map<String, Double> incTransaction = new LinkedHashMap<>();
+    /**
+     * Расходы по категориям
+     */
     @JsonProperty("exp")
     private Map<String, Double> expTransaction = new LinkedHashMap<>();
 

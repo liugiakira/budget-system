@@ -1,7 +1,5 @@
 package ru.liugiakira.budget.domains;
 
-import org.springframework.beans.factory.annotation.Value;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
