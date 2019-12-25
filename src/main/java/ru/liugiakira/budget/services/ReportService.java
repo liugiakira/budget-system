@@ -6,7 +6,6 @@ import ru.liugiakira.budget.dao.TransactionDao;
 import ru.liugiakira.budget.domains.Report;
 import ru.liugiakira.budget.domains.Values;
 
-import javax.transaction.Transactional;
 import java.util.LinkedHashMap;
 import java.util.stream.Collectors;
 
@@ -29,7 +28,6 @@ public class ReportService {
      * @param accountId ид счета (не обязательно)
      * @return отчет
      */
-    @Transactional
     public Report findTransaction(String from, String to, Long accountId) {
         Report report = new Report();
         report.setIncTransaction(transactionDao.findIncTransaction(from, to, accountId)

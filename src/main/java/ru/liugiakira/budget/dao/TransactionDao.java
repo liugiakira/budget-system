@@ -32,4 +32,6 @@ public interface TransactionDao extends JpaRepository<Transaction, Long> {
             "and (:accountId is null or t.account.id = :accountId)" +
             "GROUP BY t.categoryName")
     List<Values> findExpTransaction(@Param("from") String from, @Param("to") String to, @Param("accountId") Long accountId);
+
+
 }
